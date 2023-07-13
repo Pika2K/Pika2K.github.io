@@ -1,0 +1,69 @@
+"<?php if($_POST["message"]) { mail("christophertao10@gmail.com", "Here is the subject line", $_POST["insert your message here"]. "From: temp@gmail.com"); } ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body class="main">
+    <div class="website">
+        <div class="page">
+            <div class="top">
+                <div class="logo_mission">
+                    <img class="logo" src="logo.png">
+                    <div class="mission_statement">
+                        <h3>
+                            Our Mission
+                        </h3>
+                        <p class="mission">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit prehenderit in voluptate velit
+                        </p>
+                    </div>
+                </div>
+                <div class="Nav_title">
+                    <div class="Navbar">
+                        <div class="empty"> </div>
+                            <li><a href="index.html#1" class = "link">Articles</a></li>
+                            <li><a href="research.html" class = "link">Research</a></li>
+                            <li><a href="about_us.html" class = "link">About us</a></li>
+                            <li><a href="contact.html" class = "link">Contact</a></li>
+                    </div>
+                    <div class="heading">
+                        <div class="line1"> </div>
+                        <h1>
+                            Contact
+                        </h1>
+                        <div class="line2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <form action="form-process.php" method="POST" class="formcarry-form">
+              
+                  <label for="fname">Name: </label>
+                  <input type="text" id="name" name="name" placeholder="Your name..">
+              
+                  <label for="email">Email: </label>
+                  <input type="text" id="email" name="email" placeholder="Email..">
+
+                  <label for="subject">Message: </label>
+                  <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </div>
+    </div>
+</body>
+
+</html>
