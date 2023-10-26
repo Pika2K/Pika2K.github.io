@@ -255,11 +255,83 @@ a.link {
     }
 }
 
+a.article{
+    padding-top: 0px;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    transition: background .25s, box-shadow .15s;
+
+    &:hover {
+        color: #FFE9D5;
+        background: black;
+        transition-delay: 0.1s;
+    }
+
+    @media all and (min-width: 545px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
+a.article2 {
+    padding-top: 0px;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    transition: background .25s, box-shadow .15s;
+
+    &:hover {
+        color: #FFE9D5;
+        background: black;
+        transition-delay: 0.1s;
+    }
+
+    @media all and (min-width: 545px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+
+.us {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+}
+
+.member {
+    border: none;
+    width: 9vw;
+    height: 12vw;
+    gap: 10px;
+}
+
 .research {
     display: flex;
     flex-direction: row;
     gap: 100px;
     height: 40vw;
+    width: 95vw;
+}
+
+.research-desc {
+    height: 40vw;
+    width: 60vw;
+}
+
+.pdf {
+    width: 80vw;
 
 }
 
